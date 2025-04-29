@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.controllers.LecteurDashboardController"
+      spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+
+    <Label text="Available Books" style="-fx-font-size: 24px;" />
+
+    <ListView fx:id="availableBooksList" prefHeight="400" prefWidth="400" />
+    <Button text="Logout" onAction="#handleLogout" />
+
+</VBox>

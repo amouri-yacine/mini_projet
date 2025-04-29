@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.controllers.AdminDashboardController"
+      spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+
+    <Label text="Welcome, Admin!" style="-fx-font-size: 24px;" />
+
+    <!-- Books Section -->
+    <VBox spacing="10" alignment="CENTER_LEFT" prefWidth="300">
+        <Button text="addLivres" onAction="#handleAddLivre" />
+        <Label text="Books:" style="-fx-font-size: 18px;"/>
+        <ListView fx:id="bookListView" prefHeight="150"/>
+    </VBox>
+
+    <!-- Lecteurs (Users) Section -->
+    <VBox spacing="10" alignment="CENTER_LEFT" prefWidth="300">
+        <Button text="addLecteur" onAction="#handleAddLecteur" />
+        <Label text="Lecteurs:" style="-fx-font-size: 18px;"/>
+        <ListView fx:id="lecteurListView" prefHeight="150"/>
+    </VBox>
+
+    <Button text="Logout" onAction="#handleLogout" />
+
+</VBox>
